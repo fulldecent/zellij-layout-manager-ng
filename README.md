@@ -245,7 +245,7 @@ The released binary is named `com.github.fulldecent.zellij-layout-manager-ng.was
 
 In GitHub repository settings, under Actions, General, Workflow permissions, select read and write permissions and check "Allow GitHub Actions to create and approve pull requests". Under General, Releases, enable release immutability. Attestations are available for public repositories. Private repositories require GitHub Enterprise Cloud.
 
-Set the starting tag on the current `main` commit. `v0.0.0` is the version Release Please counts forward from. Run these commands from a clone of this repository. `gh` fills in `{owner}/{repo}` from that clone.
+Set the starting tag on the last commit that should stay out of the next release. `v0.0.0` is the version Release Please counts forward from. Commits after that tag are the next release. Do not put that tag on a commit you still want Release Please to ship. Run these commands from a clone of this repository. `gh` fills in `{owner}/{repo}` from that clone.
 
 ```sh
 gh api --method POST repos/{owner}/{repo}/git/refs \
