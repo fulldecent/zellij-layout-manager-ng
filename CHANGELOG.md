@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/fulldecent/zellij-layout-manager-ng/compare/v1.0.0...v1.0.1) (2026-11-25)
+
+
+### Bug Fixes
+
+* show the layout list in the screenshot ([e7c394b](https://github.com/fulldecent/zellij-layout-manager-ng/commit/e7c394b93c2a609ceee340a0fc1ec57998000427))
+
 ## 1.0.0 (2026-11-25)
 
 
