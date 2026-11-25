@@ -1,10 +1,12 @@
-# ModeUpdate supplies the session theme. The first frame is the built-in list.
+# Grant the two permissions, then ModeUpdate for the session theme.
+# Without the grant, the first row is the permission notice.
 name: screenshot
 plugin: ../target/wasm32-wasip1/release/plugin.wasm
 geometry:
   rows: 22
   cols: 72
 steps:
+  - action: grant_permissions
   - action: mode_update
     mode: normal
     session: demo
